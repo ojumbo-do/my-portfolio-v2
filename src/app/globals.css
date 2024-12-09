@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --background-dark: #26292b;
+  --primary: #2e3239;
+  --secondary: #5f7adb;
+  --tertiary: #a2b2ee;
+  --text-color: #ffffff;
+
+  background-color: var(--primary);
+  color: var(--text-color);
+}
+
+.light {
+  --background-dark: #000000;
+  --primary: #ffffff;
+  --secondary: #f3b191;
+  --tertiary: #f6d2be;
+  --text-color: #000000;
+
+  background-color: var(--primary);
+  color: var(--text-color);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
