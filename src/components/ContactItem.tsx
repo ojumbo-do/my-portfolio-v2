@@ -10,7 +10,7 @@ function ContactItem({ children, hrefTo = "#" }: Readonly<ContactItemProps>) {
       target="_blank"
       title="contact link"
       rel="noopener noreferrer"
-      className="text-lg hover:text-textPrimary text-secondary flex w-full flex-row items-center text-start gap-4 p-1"
+      className="text-lg hover:text-secondary text-secondary flex w-full flex-row items-center text-start gap-4 px-1 py-3"
     >
       {children}
     </a>

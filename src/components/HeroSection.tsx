@@ -6,12 +6,12 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="md:h-[calc(100dvh-70px)] scroll-smooth w-vw gap-10 flex flex-col xl:flex-row shrink"
+      className="md:h-[calc(100vh-70px)] scroll-smooth w-vw gap-10 flex flex-col xl:flex-row shrink"
     >
       <div className="xl:w-1/2 flex justify-center flex-col gap-8 md:py-10 py-5 md:pl-10">
-        <h3 className="font-bold text-secondary text-2xl">Howdy!</h3>
-        <h1 className="text-6xl">
-          <span>I am Dancun Ojumbo</span> <span>A Software Developer</span>
+        <h3 className="font-bold text-secondary text-2xl">Howdy! I&apos;m</h3>
+        <h1 className="text-[clamp(2rem,8vw,4rem)]">
+          <span>Dancun Ojumbo</span> <span>A Software Developer</span>
         </h1>
 
         <p className="text-xl">

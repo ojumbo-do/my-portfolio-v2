@@ -1,8 +1,18 @@
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
-function Socials() {
+type SocialsProps = {
+  variant?: "primary" | "secondary"; // Default is "primary"
+};
+
+function Socials({ variant }: Readonly<SocialsProps>) {
   return (
-    <div className="fixed top-1/2 right-5 md:right-10 z-20 flex flex-col gap-3 transform -translate-y-1/2">
+    <div
+      className={`${
+        variant === "secondary"
+          ? "flex flex-row gap-3"
+          : "fixed top-1/2 right-5 md:right-10 z-20 flex flex-col gap-3 transform -translate-y-1/2"
+      }`}
+    >
       <a
         href="http://www.linkedin.com/in/dancun-ojumbo-a5a278182"
         target="_blank"
