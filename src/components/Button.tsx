@@ -13,6 +13,22 @@ type ButtonProps = {
   hrefTo?: string;
   extraStyles?: string;
   handleClick?: () => void;
+  type?:
+    | "button"
+    | "submit"
+    | "reset"
+    | "hidden"
+    | "radio"
+    | "checkbox"
+    | "file"
+    | "image"
+    | "week"
+    | "month"
+    | "year"
+    | "color"
+    | "date"
+    | "datetime-local"
+    | "time";
 };
 
 function Button({
@@ -21,6 +37,7 @@ function Button({
   hrefTo = "#",
   extraStyles,
   handleClick,
+  type = "button",
 }: Readonly<ButtonProps>) {
   const baseStyles = `rounded-full px-10 py-2.5 w-full text-center font-semibold border-2 text-lg border-secondary ease-in-out transition-all duration-300`;
 
@@ -56,7 +73,10 @@ function Button({
 
   if (variant === "primary") {
     return (
-      <button onClick={handleClick} className="">
+      <button
+        onClick={handleClick}
+        className={`${baseStyles} ${extraStyles} bg-secondary text-white hover:bg-secondary hover:bg-opacity-20 `}
+      >
         {children}
       </button>
     );

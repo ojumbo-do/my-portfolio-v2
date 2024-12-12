@@ -6,9 +6,9 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="h-[calc(100dvh-70px)] scroll-smooth w-vw gap-10 flex flex-col xl:flex-row shrink"
+      className="md:h-[calc(100dvh-70px)] scroll-smooth w-vw gap-10 flex flex-col xl:flex-row shrink"
     >
-      <div className="xl:w-1/2 flex justify-center flex-col gap-8 py-10 pl-10">
+      <div className="xl:w-1/2 flex justify-center flex-col gap-8 md:py-10 py-5 md:pl-10">
         <h3 className="font-bold text-secondary text-2xl">Howdy!</h3>
         <h1 className="text-6xl">
           <span>I am Dancun Ojumbo</span> <span>A Software Developer</span>
@@ -16,8 +16,8 @@ function HeroSection() {
 
         <p className="text-xl">
           Hire me today and bring to life your desired online prescense,
-          let&apos;s design a masterpiece for you to engage your clients, start
-          by clicking the button bellow.
+          let&apos;s design a masterpiece for you to engage your clients with,
+          start by clicking the button below.
         </p>
 
         <div className="w-full inline-flex gap-5">
@@ -38,8 +38,8 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="xl:w-auto flex items-center flex-row-reverse justify-end w-full h-full">
-        <div className="w-full flex justify-end text-end">
+      <div className="xl:w-1/2 flex items-center justify-center px-5 md:px-0  w-full h-full">
+        <div className="w-full flex justify-center text-end">
           <Image
             src="/profile.272e8226.jpeg"
             width={500}

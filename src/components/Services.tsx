@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section id="services" className="h-dvh scroll-smooth">
+    <section id="services" className="md:h-dvh scroll-smooth">
       <p>Helllo</p>
     </section>
   );
